@@ -81,10 +81,7 @@ GamesAroundTheWorld - Documentación Técnica
 
 
 NOTA SOBRE LA API KEY:
-El proyecto incluye una API key de ejemplo para RAWG API. En un entorno de producción:
-1. Reemplazar con una key válida
-2. Considerar almacenarla de forma segura
-3. Implementar límites de tasa
+El proyecto incluye una API key de ejemplo para RAWG API.
 
 =======================================================
 FIN DE DOCUMENTACIÓN
