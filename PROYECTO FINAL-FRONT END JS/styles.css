@@ -280,8 +280,13 @@ body {
     text-align: center;
     position: relative;
     display: inline-block;
+    max-width: 90%;  
     left: 50%;
     transform: translateX(-50%);
+    white-space: normal;  
+    word-wrap: break-word;  
+    padding: 0 1rem;  
+
 }
 
 .section-title span {
@@ -880,6 +885,7 @@ body {
     
     .section-title {
         font-size: 2rem;
+        max-width: 95%;
     }
     
     .cart-modal {
