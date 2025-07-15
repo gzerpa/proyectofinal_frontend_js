@@ -229,7 +229,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 90%; 
+    padding: 0 1rem; 
+    word-wrap: break-word;  
 }
+
 
 .hero-title span {
     background: var(--gradient-primary);
@@ -836,6 +840,7 @@ body {
 @media (max-width: 1024px) {
     .hero-title {
         font-size: 3rem;
+        max-width: 95%;
     }
     
     .game-img {
@@ -877,6 +882,8 @@ body {
     
     .hero-title {
         font-size: 2.5rem;
+        max-width: 100%; 
+        padding: 0 0.5rem;
     }
     
     .hero-subtitle {
@@ -896,6 +903,7 @@ body {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+        letter-spacing: 1px;
     }
     
     .hero-btn {
