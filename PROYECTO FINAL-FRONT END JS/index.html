@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de videojuegos con las mejores ofertas y últimos lanzamientos">
+    <meta name="keywords" content="videojuegos, gaming, comprar juegos, ofertas gaming">
+    <title>GamesAroundTheWorld | Tienda Gaming con las mejores ofertas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        .icon {
+            font-style: normal;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .icon-controller:before { content: "🎮"; }
+        .icon-cart:before { content: "🛒"; }
+        .icon-star:before { content: "★"; }
+        .icon-star-half:before { content: "☆"; }
+        .icon-arrow:before { content: "➔"; }
+        .icon-menu:before { content: "☰"; }
+        .icon-fire:before { content: "🔥"; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo" data-text="GamesAroundTheWorld">
+                <span class="icon icon-controller"></span>
+                GamesAroundTheWorld
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#juegos" class="nav-link">Catálogo</a></li>
+                    <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+                    <li class="cart-item">
+                        <a href="#carrito" class="nav-link cart-link">
+                            <span class="icon icon-cart"></span>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="mobile-btn" aria-label="Menú de navegación">
+                    <span class="icon icon-menu"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero con animación de partículas -->
+    <section id="inicio" class="hero">
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">EXPERIENCIAS <span>ÉPICAS</span></h1>
+            <p class="hero-subtitle">Los juegos más demandados a precios increíbles</p>
+            <a href="#juegos" class="hero-btn">
+                EXPLORAR <span class="icon icon-arrow"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de juegos con efecto flotante -->
+    <main class="main">
+        <section id="juegos" class="games">
+            <h2 class="section-title">JUEGOS <span>DESTACADOS</span></h2>
+            
+            <div class="games-grid">
+                <!-- Los juegos se cargarán dinámicamente con JS -->
+            </div>
+        </section>
+
+        <!-- Sección de ofertas con efecto de fuego -->
+        <section id="ofertas" class="deals">
+            <div class="deals-container">
+                <h2 class="section-title"><span class="icon icon-fire"></span> OFERTAS <span>RELÁMPAGO</span></h2>
+                <div class="deal-card">
+                    <div class="deal-timer">
+                        <div class="timer-segment">
+                            <span class="time">02</span>
+                            <span class="label">HORAS</span>
+                        </div>
+                        <div class="timer-segment">
+                            <span class="time">18</span>
+                            <span class="label">MIN</span>
+                        </div>
+                        <div class="timer-segment">
+                            <span class="time">45</span>
+                            <span class="label">SEG</span>
+                        </div>
+                    </div>
+                    <p class="deal-text">¡Descuentos de hasta el 70% en juegos seleccionados!</p>
+                    <a href="#juegos" class="deal-btn">VER OFERTAS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto con efecto de iluminación -->
+        <section id="contacto" class="contact">
+            <h2 class="section-title">CONTACTO</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre" required aria-label="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required aria-label="Tu email">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tu mensaje..." required aria-label="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="form-btn">ENVIAR MENSAJE</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer con efecto de gradiente animado -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">GamesAroundTheWorld</div>
+                <p>La mejor selección de videojuegos para verdaderos gamers</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GamesAroundTheWorld. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal del carrito -->
+    <section id="carrito" class="cart-modal" aria-hidden="true">
+        <div class="cart-content">
+            <h2>Tu Carrito</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0</span>
+            </div>
+            <button class="close-cart" aria-label="Cerrar carrito">×</button>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </section>
+</body>
+</html>
