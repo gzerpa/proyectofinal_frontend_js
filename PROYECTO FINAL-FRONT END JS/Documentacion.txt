@@ -1,13 +1,13 @@
-GamesAroundTheWorld - Documentación Técnica Actualizada
+GamesAroundTheWorld - Documentación Técnica
 =======================================================
 
-📁 ESTRUCTURA DEL PROYECTO ACTUALIZADA
+📁 ESTRUCTURA DEL PROYECTO
 ├── index.html        # Archivo HTML principal con estructura semántica
 ├── styles.css        # Hoja de estilos CSS con animaciones y diseño responsive
 ├── script.js         # Lógica JavaScript para interactividad y API
 └── Documentation.txt # Esta documentación
 
-🔧 TECNOLOGÍAS USADAS (ACTUALIZADO)
+🔧 TECNOLOGÍAS USADAS
 - HTML5 (Semántico)
 - CSS3 (Variables, Grid, Flexbox, Animaciones)
 - JavaScript (ES6+)
